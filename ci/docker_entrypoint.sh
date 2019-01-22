@@ -4,3 +4,5 @@ echo "TRAVIS_HOME : ${TRAVIS_HOME}/.m2/repository/Jan212019/Jan212019/${TRAVIS_B
 echo "TRAVIS_BUILD_NUMBER : ${TRAVIS_BUILD_NUMBER}"
 
 java -cp  `basename target/*jar` com.first.travis.example.FirstCiExample
+
+## && chmod +x ci/docker_entrypoint.sh && sh ci/docker_entrypoint.sh

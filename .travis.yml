@@ -51,7 +51,6 @@ script:
 deploy:
 provider: script
 script: mvn --show-version clean install && ./ci/docker_entrypoint.sh
-script: mvn --show-version clean install
 skip_cleanup: true
 on:
 branch: release
